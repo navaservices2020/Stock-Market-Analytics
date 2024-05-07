@@ -4,16 +4,16 @@ import altair as alt
 import plotly.graph_objs as go
 
 # Set the name of the Streamlit app
-st.set_page_config(page_title="Mahindra & Mahindra")
+st.set_page_config(page_title="Indian Hotels Company")
 
 
 def main():                
-    st.title("Mahindra & Mahindra")
+    st.title("Indian Hotels Company")
     st.subheader("About Company") 
-    st.write("Parent organisation : Mahindra And Mahindra")
-    st.write("MD/CEO : Dr. Anish Shah")
+    st.write("Parent organisation : The Indian Hotels Company Limited")
+    st.write("MD/CEO : Mr. Puneet Chhatwal")
     st.write("Founded in : NA")
-    st.write("NSE symbol : M&M")
+    st.write("NSE symbol : INDHOTEL")
 
     st.markdown("---")
 
@@ -23,12 +23,12 @@ def main():
 
     # Get user input
     with col1:
-        todays_low = 2165.10
+        todays_low = 565.15
         st.write(f"Today's Low : {todays_low}")
 
     # Display greeting
     with col2:
-        todays_high = 2204.00
+        todays_high = 581
         st.write(f"Today's High : {todays_high}")
 
     # Create two columns
@@ -36,12 +36,12 @@ def main():
 
     # Get user input
     with col1:
-        week_52_low = 1208.05
+        week_52_low = 350.50
         st.write(f"52 Week Low : {week_52_low}")
 
     # Display greeting
     with col2:
-        week_52_high = 2204.00
+        week_52_high = 622.50
         st.write(f"52 Week High : {week_52_high}")
 
 
@@ -50,11 +50,11 @@ def main():
 
     # Get user input
     with col1:
-        open = 2165.10
+        open = 579.75
         st.write(f"Open : {open}")
 
     with col2:
-        prev_close = 2165.35
+        prev_close = 576.15
         st.write(f"Prev. Close : {prev_close}")
 
     # Create two columns
@@ -62,11 +62,11 @@ def main():
 
     # Get user input
     with col1:
-        volume = 2122282
+        volume = 2071931
         st.write(f"Volume : {volume}")
 
     with col2:
-        beta = 1.15
+        beta = 0.97
         st.write(f"Beta : {beta}")
 
     # Create three columns
@@ -74,11 +74,11 @@ def main():
 
     # Get user input
     with col1:
-        lower_circuit = 1940.75
+        lower_circuit = 514.20
         st.write(f"Lower circuit : {lower_circuit}")
 
     with col2:
-        upper_circuit = 2371.95
+        upper_circuit = 628.40
         st.write(f"Upper circuit : {upper_circuit}")
 
     # Add line separator
@@ -90,22 +90,22 @@ def main():
 
     # Get user input
     with col1:
-        mkt_cap = 2,68,142
+        mkt_cap = 81,983
         st.write(f"Mkt Cap : {mkt_cap} Cr")
 
     with col2:
-        roe = 18.47
+        roe = 13.31
         st.write(f"ROE : {roe} %")
 
     col1, col2 = st.columns([1, 2])
 
     # Get user input
     with col1:
-        p_e_ratio = 24.05
+        p_e_ratio = 65.08
         st.write(f"P/E Ratio(TTM) : {p_e_ratio}")
 
     with col2:
-        eps = 89.67
+        eps = 8.85
         st.write(f"EPS(TTM) : {eps} ")
 
     # Create three columns
@@ -113,33 +113,33 @@ def main():
 
     # Get user input
     with col1:
-        p_b_ratio = 4.43
+        p_b_ratio = 8.67
         st.write(f"P/B Ratio : {p_b_ratio}")
 
     with col2:
-        div_yield = 0.73
+        div_yield = 0.30
         st.write(f"Div Yield : {div_yield} %")
 
     col1, col2 = st.columns([1, 2])
 
     # Get user input
     with col1:
-        p_e_industry = 26.39
+        p_e_industry = 60.93
         st.write(f"Industry P/E : {p_e_industry}")
 
     with col2:
-        book_value = 486.93
+        book_value = 66.44
         st.write(f"Book Value : {book_value} ")
 
     col1, col2 = st.columns([1, 2])
 
     # Get user input
     with col1:
-        d_t_e = 1.65
+        d_t_e = 0.29
         st.write(f"Debt to Equity : {d_t_e}")
 
     with col2:
-        face_value = 5
+        face_value = 1
         st.write(f"Face Value : {face_value} ")
 
     st.markdown("---")
@@ -156,8 +156,8 @@ def main():
         st.write("## Quarterly Revenue")
 
         data = {
-    'Quarter': ["Dec'22", "Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
-    'Value': [30920, 32850, 34699, 35027, 35810, 50000]
+    'Quarter': ["Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
+    'Value': [1655, 1516, 1481, 2004, 1951]
 }
         df = pd.DataFrame(data)
 
@@ -189,8 +189,8 @@ def main():
         st.write("## Quarterly Profit")
 
         data = {
-    'Quarter': ["Dec'22", "Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
-    'Profit Value': [2994, 2998, 3684, 2484, 2977, 5000]
+    'Quarter': ["Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
+    'Profit Value': [302, 211, 160, 438, 393]
 }
         df = pd.DataFrame(data)
 
@@ -227,7 +227,7 @@ def main():
 
         data = {
     'Year': ["2019", "2020","2021", "2022", "2023", "2024"],
-    'Revenue Value': [105806, 76411, 75311, 91105, 122475, 100000]
+    'Revenue Value': [4595, 4596, 1740, 3211, 5949, 6000]
 }
         df = pd.DataFrame(data)
 
@@ -262,7 +262,7 @@ def main():
 
         data = {
     'Year': ["2019", "2020","2021", "2022", "2023", "2024"],
-    'Profit Value': [6017, 2713, 3702, 7253, 11374, 10000]
+    'Profit Value': [245, 351, -694, -222, 971, 500]
 }
         df = pd.DataFrame(data)
 
@@ -296,7 +296,7 @@ def main():
 
         data = {
     'Year': ["2019", "2020","2021", "2022", "2023", "2024"],
-    'Net Worth': [48344, 47661, 50652, 56825, 67082, 50000]
+    'Net Worth': [5148, 5122, 4283, 7655, 8642, 5000]
 }
         df = pd.DataFrame(data)
 
@@ -321,7 +321,7 @@ def main():
     yaxis_title="Net Worth in crore"
 )
 
-# Display the Plotly chart
+# Display the Plotly charts
         st.plotly_chart(fig)
     
         st.markdown("---")
@@ -340,8 +340,8 @@ def main():
 
 # Sample data
         data = {
-    'Category': ["Foreign Institutions", "Promoters", "Retail", "Other Domestic Institutions", "Mutual Funds"],
-    'Value': [41.75, 18.59, 13.53, 13.40, 12.72]
+    'Category': ["Promoters", "Foreign Institutions", "Retail", "Mutual Funds", "Other Domestic Institutions"],
+    'Value': [38.12, 24.47, 16.63, 15.92, 4.86]
 }
         df = pd.DataFrame(data)
 
@@ -357,10 +357,10 @@ def main():
         st.write("Shareholding pattern Dec'23")
         
 
-# Sample data
+# Sample data 
         data = {
-    'Category': ["Foreign Institutions", "Promoters", "Retail", "Other Domestic Institutions", "Mutual Funds"],
-    'Value': [40.87, 19.32, 13.55, 13.21, 13.06]
+    'Category': ["Promoters", "Foreign Institutions", "Retail", "Mutual Funds", "Other Domestic Institutions"],
+    'Value': [38.12, 23.28, 17.16, 16.78, 4.67]
 }
         df = pd.DataFrame(data)
 
@@ -378,8 +378,8 @@ def main():
 
 # Sample data
         data = {
-    'Category': ["Foreign Institutions", "Promoters","Mutual Funds", "Retail", "Other Domestic Institutions"],
-    'Value': [40.26, 19.34, 13.73, 13.62, 13.06]
+    'Category': ["Promoters", "Foreign Institutions","Mutual Funds" , "Retail", "Other Domestic Institutions"],
+    'Value': [38.19, 22.17, 18.16, 16.38, 5.10]
 }
         df = pd.DataFrame(data)
 
@@ -398,8 +398,8 @@ def main():
 
 # Sample data
         data = {
-    'Category': ["Foreign Institutions", "Promoters","Mutual Funds", "Retail", "Other Domestic Institutions" ],
-    'Value': [40.14, 19.37, 13.94, 13.62, 12.94]
+    'Category': ["Promoters","Foreign Institutions","Mutual Funds", "Retail", "Other Domestic Institutions" ],
+    'Value': [38.19, 21.64, 19.27, 15.98, 4.92]
 }
         df = pd.DataFrame(data)
 
@@ -418,8 +418,8 @@ def main():
 
 # Sample data
         data = {
-    'Category': ["Foreign Institutions", "Promoters","Mutual Funds", "Retail", "Other Domestic Institutions" ],
-    'Value': [39.24, 19.37, 15.06, 13.74, 12.60]
+    'Category': ["Promoters","Mutual Funds", "Foreign Institutions","Retail",  "Other Domestic Institutions"],
+    'Value': [38.19,22.29,18.24,16.29,5.00]
 }
         df = pd.DataFrame(data)
 

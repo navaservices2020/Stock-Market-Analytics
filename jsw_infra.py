@@ -3,17 +3,19 @@ import pandas as pd
 import altair as alt
 import plotly.graph_objs as go
 
+
+
 # Set the name of the Streamlit app
-st.set_page_config(page_title="Mahindra & Mahindra")
+st.set_page_config(page_title="JSW Infrastructure")
 
 
 def main():                
-    st.title("Mahindra & Mahindra")
+    st.title("JSW Infrastructure")
     st.subheader("About Company") 
-    st.write("Parent organisation : Mahindra And Mahindra")
-    st.write("MD/CEO : Dr. Anish Shah")
+    st.write("Parent organisation : JSW Infrastructure Limited")
+    st.write("MD/CEO : Mr. Arun Maheshwari")
     st.write("Founded in : NA")
-    st.write("NSE symbol : M&M")
+    st.write("NSE symbol : JSWINFRA")
 
     st.markdown("---")
 
@@ -23,12 +25,12 @@ def main():
 
     # Get user input
     with col1:
-        todays_low = 2165.10
+        todays_low = 240.50
         st.write(f"Today's Low : {todays_low}")
 
     # Display greeting
     with col2:
-        todays_high = 2204.00
+        todays_high = 252.70
         st.write(f"Today's High : {todays_high}")
 
     # Create two columns
@@ -36,12 +38,12 @@ def main():
 
     # Get user input
     with col1:
-        week_52_low = 1208.05
+        week_52_low = 142.20
         st.write(f"52 Week Low : {week_52_low}")
 
     # Display greeting
     with col2:
-        week_52_high = 2204.00
+        week_52_high = 252.70
         st.write(f"52 Week High : {week_52_high}")
 
 
@@ -50,11 +52,11 @@ def main():
 
     # Get user input
     with col1:
-        open = 2165.10
+        open = 252
         st.write(f"Open : {open}")
 
     with col2:
-        prev_close = 2165.35
+        prev_close = 251.30
         st.write(f"Prev. Close : {prev_close}")
 
     # Create two columns
@@ -62,11 +64,11 @@ def main():
 
     # Get user input
     with col1:
-        volume = 2122282
+        volume = 2615724
         st.write(f"Volume : {volume}")
 
     with col2:
-        beta = 1.15
+        beta = 1.30
         st.write(f"Beta : {beta}")
 
     # Create three columns
@@ -74,11 +76,11 @@ def main():
 
     # Get user input
     with col1:
-        lower_circuit = 1940.75
+        lower_circuit = 226.20
         st.write(f"Lower circuit : {lower_circuit}")
 
     with col2:
-        upper_circuit = 2371.95
+        upper_circuit = 276.40
         st.write(f"Upper circuit : {upper_circuit}")
 
     # Add line separator
@@ -90,22 +92,22 @@ def main():
 
     # Get user input
     with col1:
-        mkt_cap = 2,68,142
+        mkt_cap = 54,275
         st.write(f"Mkt Cap : {mkt_cap} Cr")
 
     with col2:
-        roe = 18.47
+        roe = 14.40
         st.write(f"ROE : {roe} %")
 
     col1, col2 = st.columns([1, 2])
 
     # Get user input
     with col1:
-        p_e_ratio = 24.05
+        p_e_ratio = 46.99
         st.write(f"P/E Ratio(TTM) : {p_e_ratio}")
 
     with col2:
-        eps = 89.67
+        eps = 5.50
         st.write(f"EPS(TTM) : {eps} ")
 
     # Create three columns
@@ -113,33 +115,33 @@ def main():
 
     # Get user input
     with col1:
-        p_b_ratio = 4.43
+        p_b_ratio = 6.75
         st.write(f"P/B Ratio : {p_b_ratio}")
 
     with col2:
-        div_yield = 0.73
+        div_yield = 0.21
         st.write(f"Div Yield : {div_yield} %")
 
     col1, col2 = st.columns([1, 2])
 
     # Get user input
     with col1:
-        p_e_industry = 26.39
+        p_e_industry = 33.56
         st.write(f"Industry P/E : {p_e_industry}")
 
     with col2:
-        book_value = 486.93
+        book_value = 38.27
         st.write(f"Book Value : {book_value} ")
 
     col1, col2 = st.columns([1, 2])
 
     # Get user input
     with col1:
-        d_t_e = 1.65
+        d_t_e = 0.59
         st.write(f"Debt to Equity : {d_t_e}")
 
     with col2:
-        face_value = 5
+        face_value = 2
         st.write(f"Face Value : {face_value} ")
 
     st.markdown("---")
@@ -156,8 +158,8 @@ def main():
         st.write("## Quarterly Revenue")
 
         data = {
-    'Quarter': ["Dec'22", "Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
-    'Value': [30920, 32850, 34699, 35027, 35810, 50000]
+    'Quarter': ["Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
+    'Value': [973, 918, 895, 1018, 1200]
 }
         df = pd.DataFrame(data)
 
@@ -189,8 +191,8 @@ def main():
         st.write("## Quarterly Profit")
 
         data = {
-    'Quarter': ["Dec'22", "Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
-    'Profit Value': [2994, 2998, 3684, 2484, 2977, 5000]
+    'Quarter': ["Mar'23","Jun'23", "Sep'23", "Dec'23", "Mar'24"],
+    'Profit Value': [302, 322, 256, 254, 329]
 }
         df = pd.DataFrame(data)
 
@@ -227,7 +229,7 @@ def main():
 
         data = {
     'Year': ["2019", "2020","2021", "2022", "2023", "2024"],
-    'Revenue Value': [105806, 76411, 75311, 91105, 122475, 100000]
+    'Revenue Value': [1182, 1237, 1678, 2379, 3373, 4000]
 }
         df = pd.DataFrame(data)
 
@@ -262,7 +264,7 @@ def main():
 
         data = {
     'Year': ["2019", "2020","2021", "2022", "2023", "2024"],
-    'Profit Value': [6017, 2713, 3702, 7253, 11374, 10000]
+    'Profit Value': [272, 197, 285, 330, 750, 500]
 }
         df = pd.DataFrame(data)
 
@@ -296,7 +298,7 @@ def main():
 
         data = {
     'Year': ["2019", "2020","2021", "2022", "2023", "2024"],
-    'Net Worth': [48344, 47661, 50652, 56825, 67082, 50000]
+    'Net Worth': [3085, 2751, 3088, 3472, 4089, 5000]
 }
         df = pd.DataFrame(data)
 
@@ -321,7 +323,7 @@ def main():
     yaxis_title="Net Worth in crore"
 )
 
-# Display the Plotly chart
+# Display the Plotly charts
         st.plotly_chart(fig)
     
         st.markdown("---")
@@ -330,7 +332,7 @@ def main():
     # Add tabs to the main content area
     tabs = st.selectbox(
     "Choose a Quarter:",
-    ["Mar'24", "Dec'23", "Sep'23", "Jun'23", "Mar'23"]
+    ["Mar'24", "Dec'23", "Sep'23"]
 )
 
 # Display content based on selected tab
@@ -340,8 +342,8 @@ def main():
 
 # Sample data
         data = {
-    'Category': ["Foreign Institutions", "Promoters", "Retail", "Other Domestic Institutions", "Mutual Funds"],
-    'Value': [41.75, 18.59, 13.53, 13.40, 12.72]
+    'Category': ["Promoters", "Retail", "Mutual Funds", "Foreign Institutions", "Other Domestic Institutions"],
+    'Value': [85.61, 8.46, 2.89, 2.34, 0.69]
 }
         df = pd.DataFrame(data)
 
@@ -357,10 +359,10 @@ def main():
         st.write("Shareholding pattern Dec'23")
         
 
-# Sample data
+# Sample data 
         data = {
-    'Category': ["Foreign Institutions", "Promoters", "Retail", "Other Domestic Institutions", "Mutual Funds"],
-    'Value': [40.87, 19.32, 13.55, 13.21, 13.06]
+    'Category': ["Promoters", "Retail", "Mutual Funds", "Foreign Institutions", "Other Domestic Institutions"],
+    'Value': [85.61, 8.32, 3.32, 2.43, 0.32]
 }
         df = pd.DataFrame(data)
 
@@ -378,8 +380,8 @@ def main():
 
 # Sample data
         data = {
-    'Category': ["Foreign Institutions", "Promoters","Mutual Funds", "Retail", "Other Domestic Institutions"],
-    'Value': [40.26, 19.34, 13.73, 13.62, 13.06]
+    'Category': ["Promoters","Retail",  "Foreign Institutions","Mutual Funds" , "Other Domestic Institutions"],
+    'Value': [85.61, 6.61, 3.64, 2.46, 1.67]
 }
         df = pd.DataFrame(data)
 
@@ -392,44 +394,7 @@ def main():
         st.plotly_chart(create_pie_chart(df))
        
 
-    elif tabs == "Jun'23":
-        st.write("Shareholding pattern Jun'23")
-        
-
-# Sample data
-        data = {
-    'Category': ["Foreign Institutions", "Promoters","Mutual Funds", "Retail", "Other Domestic Institutions" ],
-    'Value': [40.14, 19.37, 13.94, 13.62, 12.94]
-}
-        df = pd.DataFrame(data)
-
-# Function to create pie chart
-        def create_pie_chart(data):
-            fig = go.Figure(data=[go.Pie(labels=data['Category'], values=data['Value'])])
-            fig.update_layout(title="Pie Chart")
-            return fig
-        
-        st.plotly_chart(create_pie_chart(df))
-        
-
-    elif tabs == "Mar'23":
-        st.write("Shareholding pattern Mar'23")
-        
-
-# Sample data
-        data = {
-    'Category': ["Foreign Institutions", "Promoters","Mutual Funds", "Retail", "Other Domestic Institutions" ],
-    'Value': [39.24, 19.37, 15.06, 13.74, 12.60]
-}
-        df = pd.DataFrame(data)
-
-# Function to create pie chart
-        def create_pie_chart(data):
-            fig = go.Figure(data=[go.Pie(labels=data['Category'], values=data['Value'])])
-            fig.update_layout(title="Pie Chart")
-            return fig
-        
-        st.plotly_chart(create_pie_chart(df))
+    
         
 
 if __name__ == "__main__":
